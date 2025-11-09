@@ -96,19 +96,6 @@ npm test
 
 Ao cadastrar um novo dispositivo, a aplicação usa a IA Google Gemini para gerar automaticamente uma descrição baseada no nome do dispositivo e endereço MAC. A IA foca em características técnicas e possíveis usos do dispositivo. Se a API estiver indisponível, uma descrição padrão é usada.
 
-## Recursos de Segurança
-
-Esta aplicação implementa medidas de segurança OWASP Top 10:
-
-- **Validação e Sanitização de Entrada**: Todas as entradas do usuário são validadas e sanitizadas para prevenir ataques de injeção e XSS.
-- **Limitação de Taxa**: Os endpoints da API são protegidos com limitação de taxa para prevenir abuso.
-- **Configuração CORS**: Compartilhamento de Recursos entre Origens é configurado adequadamente.
-- **Cabeçalhos Seguros**: Helmet.js fornece cabeçalhos de segurança incluindo CSP, HSTS e proteção XSS.
-- **Variáveis de Ambiente**: Dados sensíveis como chaves de API e credenciais do banco são armazenados em variáveis de ambiente.
-- **Logging**: Logger Winston registra eventos de segurança e erros para monitoramento.
-- **Tratamento de Erros**: Respostas genéricas de erro previnem vazamento de informações.
-- **Validação de Endereço MAC**: Validação rigorosa de formato de endereço MAC com regex.
-- **Aplicação HTTPS**: Recomendado para implantação em produção.
 
 ### Configuração do Ambiente
 
