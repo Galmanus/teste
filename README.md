@@ -1,6 +1,7 @@
 # Aplicativo de Cadastro de Dispositivos com Integração de IA
 
 Uma aplicação web full-stack para cadastro de dispositivos com atualizações de status em tempo real usando WebSocket e descrições geradas por IA.
+Para descrição técnica detalhada leia https://deepwiki.com/Galmanus/teste 
 
 ## Funcionalidades
 
